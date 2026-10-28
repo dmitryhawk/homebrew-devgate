@@ -1,28 +1,28 @@
 class Devgate < Formula
   desc "Put localhost on the internet — secure tunnels to your local ports"
   homepage "https://devgate.online"
-  version "0.20.0"
+  version "0.20.1"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://devgate.online/downloads/agent/v0.20.0/devgate-0.20.0-darwin-arm64.tar.gz"
-      sha256 "0b0f4b57afed525f90610c3b71e82ed8ca7216c760772481dd3b45d2ed8eb1c1"
+      url "https://devgate.online/downloads/agent/v0.20.1/devgate-0.20.1-darwin-arm64.tar.gz"
+      sha256 "72734231cf2e8871c4771bcfd5949c4b8d76c1413dcecf5b9124d4545d2d4a10"
     end
     on_intel do
-      url "https://devgate.online/downloads/agent/v0.20.0/devgate-0.20.0-darwin-amd64.tar.gz"
-      sha256 "96a61a36fa60c4fc362aca81b53c4cd903b2cacd023eddea43f2d23738a849f4"
+      url "https://devgate.online/downloads/agent/v0.20.1/devgate-0.20.1-darwin-amd64.tar.gz"
+      sha256 "79801d79b0025ef8bdea03af375275f1231e7c907427afba075b6bbd14c3a4bf"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://devgate.online/downloads/agent/v0.20.0/devgate-0.20.0-linux-arm64.tar.gz"
-      sha256 "bf8970f6677e3181f4c36085f5d565a14d08a6c096dfdec22b32c2685e088b1b"
+      url "https://devgate.online/downloads/agent/v0.20.1/devgate-0.20.1-linux-arm64.tar.gz"
+      sha256 "847f191b4f9b075ce835d65c64e5f735765eae118ff65fed3801c714333a9d41"
     end
     on_intel do
-      url "https://devgate.online/downloads/agent/v0.20.0/devgate-0.20.0-linux-amd64.tar.gz"
-      sha256 "c8806e3b00bee2e9c64a03134e4adad484c493f3ab3f4a22f832755b2972c1ff"
+      url "https://devgate.online/downloads/agent/v0.20.1/devgate-0.20.1-linux-amd64.tar.gz"
+      sha256 "cdb0217a3353de7a50e872fb8f3d2bdf52a1f81997adee61ee4867ba02122937"
     end
   end
 
@@ -31,6 +31,6 @@ class Devgate < Formula
   end
 
   test do
-    assert_match "devgate 0.20.0", shell_output("#{bin}/devgate --version")
+    assert_match "devgate 0.20.1", shell_output("#{bin}/devgate --version")
   end
 end
